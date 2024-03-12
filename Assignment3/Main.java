@@ -19,7 +19,7 @@ public class Main {
         emptyVaccine.display(false);
 
         // Use setters to add values to the empty Vaccine
-        emptyVaccine.setId(1);
+        emptyVaccine.setId(01);
         emptyVaccine.setName("COVID-19 VAX ");    
         emptyVaccine.setCost(40.0);
         emptyVaccine.setQuantity(1000);
