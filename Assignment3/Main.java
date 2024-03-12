@@ -22,16 +22,16 @@ public class Main {
         emptyVaccine.setId(1);
         emptyVaccine.setName("COVID-19 VAX ");    
         emptyVaccine.setCost(40.0);
-        emptyVaccine.setQuantity(10000);
-        emptyVaccine.setExpiryDate(new SimpleDateFormat("yyyy-MM-dd").parse("2028-11-12"));
+        emptyVaccine.setQuantity(1000);
+        emptyVaccine.setExpiryDate(new SimpleDateFormat("yyyy-MM-dd").parse(" 2028-11-12"));
         emptyVaccine.setSpecialInstructions("Store in a place which is cool");
 
         // Display the values of the Vaccine in a non-linear format
         emptyVaccine.display(false);
 
         // Use parameterized constructor to create two more vaccines
-        Vaccine vaccine1 = new Vaccine(2, "Vaccine X   ", 40.0, 500, new SimpleDateFormat("yyyy-MM-dd").parse("2025-01-01"), "Use caution when handling");
-        Vaccine vaccine2 = new Vaccine(3, "Vaccine Y   ", 35.5, 750, new SimpleDateFormat("yyyy-MM-dd").parse("2025-01-01"), "Maintain refrigeration");
+        Vaccine vaccine1 = new Vaccine(2, "Vaccine X   ", 50.0, 600, new SimpleDateFormat("yyyy-MM-dd").parse("2025-01-01"), "Use caution when handling");
+        Vaccine vaccine2 = new Vaccine(3, "Vaccine Y   ", 45.5, 850, new SimpleDateFormat("yyyy-MM-dd").parse("2025-01-01"), "Maintain refrigeration");
 
         // Create an array to save all the vaccines
         Vaccine[] vaccines = {emptyVaccine, vaccine1, vaccine2};
