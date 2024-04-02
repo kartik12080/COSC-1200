@@ -9,7 +9,7 @@ package Assignment4;
 import java.util.Date;
 
 class ProductAssignment {
-    private int productCode;
+    private int SKU;
     private String productName;
     private double unitPrice;
     private int quantityInStock;
@@ -18,7 +18,7 @@ class ProductAssignment {
 
     // Default constructor
     public ProductAssignment() {
-        this.productCode = 0;
+        this.SKU = 0;
         this.productName = "Unnamed Product";
         this.unitPrice = 0.0;
         this.quantityInStock = 0;
@@ -27,8 +27,8 @@ class ProductAssignment {
     }
 
     // Parameterized constructor
-    public ProductAssignment(int productCode, String productName, double unitPrice, int quantityInStock, int quantityRequired, String instructions) {
-        this.productCode = productCode;
+    public ProductAssignment(int SKU, String productName, double unitPrice, int quantityInStock, int quantityRequired, String instructions) {
+        this.SKU = SKU;
         this.productName = productName;
         this.unitPrice = unitPrice;
         this.quantityInStock = quantityInStock;
@@ -37,12 +37,12 @@ class ProductAssignment {
     }
 
     // Getter and setter methods
-    public int getProductCode() {
-        return productCode;
+    public int getSKU() {
+        return SKU;
     }
 
-    public void setProductCode(int productCode) {
-        this.productCode = productCode;
+    public void setSKU(int SKU) {
+        this.SKU = SKU;
     }
 
     public String getProductName() {
@@ -87,7 +87,7 @@ class ProductAssignment {
 
     // Display function
     public void showDetails() {
-        System.out.println("Product Code: " + productCode);
+        System.out.println("SKU: " + SKU);
         System.out.println("Product Name: " + productName);
         System.out.println("Unit Price: " + unitPrice);
         System.out.println("Quantity in Stock: " + quantityInStock);
@@ -101,8 +101,8 @@ class PerishableProductAssignment extends ProductAssignment {
     private Date expiryDate;
 
     // Overloaded constructor
-    public PerishableProductAssignment(int productCode, String productName, double unitPrice, int quantityInStock, int quantityRequired, String instructions, Date expiryDate) {
-        super(productCode, productName, unitPrice, quantityInStock, quantityRequired, instructions);
+    public PerishableProductAssignment(int SKU, String productName, double unitPrice, int quantityInStock, int quantityRequired, String instructions, Date expiryDate) {
+        super(SKU, productName, unitPrice, quantityInStock, quantityRequired, instructions);
         this.expiryDate = expiryDate;
     }
 
